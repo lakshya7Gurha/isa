@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Impact Startup Academy - Build Profitable Startups with Purpose",
   description: "Learn how to build startups that tackle important societal problems AND are self-sustainable in our 5-week cohort-based course.",
-  keywords: ["impact startup", "startup course", "purpose-driven", "profitable startups", "social impact"],
+  keywords: ["impact startup", "startup course", "purpose-driven", "profitable startups", "social impact"]
 };
 
 export default function RootLayout({
@@ -15,6 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body className="font-space-grotesk">{children}</body>
     </html>
   );
