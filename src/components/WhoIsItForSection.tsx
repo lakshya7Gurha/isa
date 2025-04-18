@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FaRegLightbulb, FaRegHandshake, FaRegChartBar } from "react-icons/fa";
+import PRMentionsLight from "./PRMentionsLight";
 
 interface PersonaProps {
   icon: React.ReactNode;
@@ -112,7 +113,7 @@ const WhoIsItForSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#f9fafb]">
+    <section id="who-is-it-for" className="py-24 bg-[#f9fafb]">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -142,6 +143,9 @@ const WhoIsItForSection = () => {
             <Persona key={persona.title} {...persona} delay={index * 0.1} />
           ))}
         </div>
+
+        {/* PR Mentions */}
+        <PRMentionsLight />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

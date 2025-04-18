@@ -111,7 +111,7 @@ const TestimonialsSection = () => {
   if (!isClient) return null;
 
   return (
-    <section className="relative py-24 overflow-hidden bg-gradient-to-b from-white to-[#f0f9ff]">
+    <section id="testimonials" className="relative py-24 overflow-hidden bg-gradient-to-b from-white to-[#f0f9ff]">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#f4bfd0] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob" />

@@ -16,16 +16,16 @@ const Footer = () => {
               Your 5-week guide to building startups that tackle an important societal problem AND are self-sustainable
             </p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/build3/?" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <FaLinkedin size={20} />
               </a>
-              <a href="https://youtube.com" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
+              <a href="https://www.youtube.com/@build3" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
                 <FaYoutube size={20} />
               </a>
-              <a href="https://twitter.com" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
+              <a href="https://x.com/build3_startups" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
                 <FaTwitter size={20} />
               </a>
-              <a href="https://instagram.com" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/build3.startupstudio/" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
                 <FaInstagram size={20} />
               </a>
             </div>
@@ -68,10 +68,10 @@ const Footer = () => {
               Have questions about the course?
             </p>
             <a
-              href="mailto:info@impactstartupacademy.com"
+              href="mailto:isa@build3.org"
               className="text-secondary-green hover:text-secondary-green hover:underline"
             >
-              info@impactstartupacademy.com
+              isa@build3.org
             </a>
             <p className="text-gray-400 mt-4 mb-2">
               For urgent inquiries:
@@ -90,15 +90,10 @@ const Footer = () => {
             &copy; {currentYear} Impact Startup Academy. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
-            <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
+            <Link href="https://www.build3.org/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Refund Policy
-            </Link>
+           
           </div>
         </div>
       </div>

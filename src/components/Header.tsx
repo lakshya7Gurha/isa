@@ -4,6 +4,13 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Header = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm py-4 border-b">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
@@ -22,30 +29,34 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="hidden md:flex space-x-6 items-center"
         >
-          <Link
-            href="#curriculum"
+          <button
+            onClick={() => scrollToSection("curriculum")}
             className="text-black hover:text-[#79c0a6] transition-colors"
+            aria-label="Scroll to Curriculum section"
           >
             Curriculum
-          </Link>
-          <Link
-            href="#who-is-it-for"
+          </button>
+          <button
+            onClick={() => scrollToSection("who-is-it-for")}
             className="text-black hover:text-[#79c0a6] transition-colors"
+            aria-label="Scroll to Who Is It For section"
           >
             Who Is It For
-          </Link>
-          <Link
-            href="#testimonials"
+          </button>
+          <button
+            onClick={() => scrollToSection("testimonials")}
             className="text-black hover:text-[#79c0a6] transition-colors"
+            aria-label="Scroll to Testimonials section"
           >
             Testimonials
-          </Link>
-          <Link
-            href="#instructors"
+          </button>
+          <button
+            onClick={() => scrollToSection("instructors")}
             className="text-black hover:text-[#79c0a6] transition-colors"
+            aria-label="Scroll to Instructors section"
           >
             Instructors
-          </Link>
+          </button>
         </motion.nav>
 
         <motion.div
